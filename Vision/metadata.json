@@ -1,8 +1,0 @@
-{
-  "name": "Vision AI",
-  "description": "Vision AI Staffing & Recruitment Services website",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
