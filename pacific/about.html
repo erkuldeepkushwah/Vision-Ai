@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | PACIFIC WORKFORCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Shared Components Logic & Style Guidance Integration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#ffba25",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#404754",
+                    "secondary": "#7d5800",
+                    "primary-fixed-dim": "#c0c6d7",
+                    "surface-container": "#efecff",
+                    "on-tertiary-container": "#f0472f",
+                    "surface-container-high": "#e9e6f9",
+                    "on-tertiary-fixed": "#400200",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "tertiary-fixed-dim": "#ffb4a6",
+                    "on-surface": "#1a1a28",
+                    "on-secondary-fixed": "#271900",
+                    "on-background": "#1a1a28",
+                    "tertiary-container": "#420200",
+                    "surface-tint": "#585f6d",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f5f2ff",
+                    "outline-variant": "#c6c6cc",
+                    "inverse-primary": "#c0c6d7",
+                    "surface-dim": "#dbd8eb",
+                    "inverse-on-surface": "#f2efff",
+                    "on-primary-container": "#7e8594",
+                    "secondary-container": "#fdb71a",
+                    "primary-fixed": "#dce2f3",
+                    "on-surface-variant": "#45474c",
+                    "background": "#fcf8ff",
+                    "deep-navy": "#161D29",
+                    "primary-container": "#161d29",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#fcf8ff",
+                    "surface": "#fcf8ff",
+                    "on-tertiary-fixed-variant": "#910c00",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "steel-gray": "#686777",
+                    "tertiary": "#090000",
+                    "on-secondary-container": "#6b4b00",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e3e0f3",
+                    "primary": "#000209",
+                    "canvas-white": "#FFFFFF",
+                    "error": "#ba1a1a",
+                    "outline": "#75777c",
+                    "tertiary-fixed": "#ffdad4",
+                    "maritime-gold": "#FAB516",
+                    "on-primary-fixed": "#151c28",
+                    "surface-container-highest": "#e3e0f3",
+                    "inverse-surface": "#2f2f3d",
+                    "signal-red": "#E23D26",
+                    "secondary-fixed": "#ffdea9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "body-lg": ["\"Source Sans 3\""],
+                    "headline-lg": ["Montserrat"],
+                    "label-lg": ["Montserrat"],
+                    "label-sm": ["\"Source Sans 3\""],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-md": ["\"Source Sans 3\""],
+                    "headline-xl": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .bg-pattern {
+            background-color: #fcf8ff;
+            background-image: radial-gradient(#dce2f3 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant">
+<nav class="flex justify-between items-center w-full max-w-container-max mx-auto px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<img alt="PACIFIC WORKFORCE Logo" class="h-12 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtXpKtUU5oV0tdN25e-gYuuqCpaXT_Ek3dlz3TacNfYwq5WgChDbSlFKzibcxAqC61yEmNAMx3yuwumLmPONvnUVO8cVDDrtbQ9uY4DDQnFClEhyOIddEGP9VHFD5RGWzHjvEbmpysTx6eTuYiDGH-xwLoM7nyd52TcrS1PAuMCcbY5zYNWujVOXgMu9JGIaiTwxzvKkmS_8M2DJzSwGbmVjEML6RZcQrBDf1ItJ9fAzt0tyremcvdo_A"/>
+</div>
+<div class="hidden md:flex items-center space-x-8"><a class="text-on-surface-variant font-medium hover:text-secondary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_5}}">Home</a><a class="text-secondary-container border-b-2 border-secondary-container pb-1 font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_9}}">About</a><a class="text-on-surface-variant font-medium hover:text-secondary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_6}}">Services</a><a class="text-on-surface-variant font-medium hover:text-secondary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_2}}">Blog</a><a class="text-on-surface-variant font-medium hover:text-secondary transition-colors font-label-lg text-label-lg" href="{{DATA:SCREEN:SCREEN_4}}">Contact</a></div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="camera">camera</span>
+</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="py-16 md:py-24 bg-pattern">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1">
+<img alt="Professional group portrait" class="w-full h-auto rounded-xl shadow-lg object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLskKxzYsgufX5eNqB1Vl9QB439q4H4eJiuVxIwgkiLja2fPaoq8itH0qp688cNeQjxlVj-FYSBQ_CiNff5VUmUhJ_R7RtnVZrFv8W5Zh_POyUsBMa03ztXSU9UK-jom0JSSRZa_W9XcG3vVz0-enMMigxQjZrv-r3OyMprsNmKVXAk0WOTSJSgiM6Ti23nvC9jerA9kJWI9PiJt-MmpDQcHlx4u6BErSRCo1c93rFB4uDdxnJEmCCYetGk"/>
+</div>
+<div class="order-1 md:order-2 space-y-6">
+<div>
+<span class="text-maritime-gold font-label-lg text-label-lg uppercase tracking-wider">About Us</span>
+<h1 class="font-headline-xl text-headline-xl text-deep-navy mt-2">Proving Forces For All Your Needs</h1>
+</div>
+<p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+                        Pacific Workforce is a PAN India organization that provides an entire spectrum of service solutions for the basic foundation of your organization - Human Resources.
+                    </p>
+<p class="text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+                        The core offerings include providing forces for multiple needs along with recruitment, comprehensive support in PEO, EOR, remote hiring, payroll outsourcing, customized HR solutions and more! We do all the research, strategy and execution so your business gets the most efficient labour force.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Commitment and Values -->
+<section class="py-16 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<span class="text-maritime-gold font-label-lg text-label-lg uppercase">We Stand For</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy mt-2">Our Statement for Commitment and Values</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<!-- Mission -->
+<div class="bg-maritime-gold p-8 rounded-lg transition-transform hover:-translate-y-2 duration-300">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-6 border-b border-deep-navy/20 pb-2">Mission</h3>
+<ul class="space-y-4 text-deep-navy font-medium font-body-md">
+<li class="flex items-start gap-2"><span>-</span> Provide top-notch employees and employment.</li>
+<li class="flex items-start gap-2"><span>-</span> Uphold the highest manpower standards.</li>
+<li class="flex items-start gap-2"><span>-</span> Focus on integrity, social responsibility and excellent service</li>
+<li class="flex items-start gap-2"><span>-</span> Prioritize workforce well-being and client satisfaction</li>
+</ul>
+</div>
+<!-- Vision -->
+<div class="bg-maritime-gold p-8 rounded-lg transition-transform hover:-translate-y-2 duration-300 shadow-xl shadow-maritime-gold/10">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-6 border-b border-deep-navy/20 pb-2">Vision</h3>
+<ul class="space-y-4 text-deep-navy font-medium font-body-md">
+<li class="flex items-start gap-2"><span>-</span> Focus on productivity for both clients &amp; workers.</li>
+<li class="flex items-start gap-2"><span>-</span> Maintain connection with workers and their concerns.</li>
+<li class="flex items-start gap-2"><span>-</span> Maintain close coordination with clients.</li>
+<li class="flex items-start gap-2"><span>-</span> Solve each problem with a quick response time.</li>
+</ul>
+</div>
+<!-- Values -->
+<div class="bg-maritime-gold p-8 rounded-lg transition-transform hover:-translate-y-2 duration-300">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-6 border-b border-deep-navy/20 pb-2">Values</h3>
+<ul class="space-y-4 text-deep-navy font-medium font-body-md">
+<li class="flex items-start gap-2"><span>-</span> Partner to deliver innovative workforce solutions.</li>
+<li class="flex items-start gap-2"><span>-</span> Aspire to be the best in manpower solutions.</li>
+<li class="flex items-start gap-2"><span>-</span> Integrity, social responsibility, and service excellence.</li>
+<li class="flex items-start gap-2"><span>-</span> <strong>Internal Focus:</strong> Employees are our valued internal customers.</li>
+<li class="flex items-start gap-2"><span>-</span> <strong>External Focus:</strong> Valued clients as our external customers.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Presence -->
+<section class="py-16 bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-10">
+<span class="text-maritime-gold font-label-lg text-label-lg block mb-2 uppercase">Connecting Maharashtra - From North to South, East to West!</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">Our Presence Across Maharashtra</h2>
+</div>
+<div class="flex justify-center">
+<img alt="Maharashtra Coverage Map" class="max-w-4xl w-full h-auto drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida/AP1WRLuwRlvrHzzrdE6Hy-iK9nnu42K3hrDJ7kx6bPzN7Q71S9eHPSRxndvCk8Xs6GbLM04ehfGwsoRppkL_-1HsLsOh94anQPlPcbdY5tHbNsJaAsUtRa9vBCXyYDU2QQUR9rJGO2YsNUiFFZQOl-0eP3siMsUX95d0XG1cgic7eJ9jztmXES8Fvyf4mP6ages7X3EOsrX6howls-25IQK-2f45FJXByitrKYKYAYsJe44CouF8muIobAJA1ao"/>
+</div>
+</div>
+</section>
+<!-- Operational Excellence -->
+<section class="py-16 md:py-24 bg-surface-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<span class="text-maritime-gold font-label-lg text-label-lg block mb-2">Balancing Performance for Minimum Losses and Maximum Productivity.</span>
+<h2 class="font-headline-lg text-headline-lg text-deep-navy">Our Approach to Achieving Operational Excellence</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Maximum On -->
+<div class="bg-white p-10 border-t-4 border-maritime-gold shadow-sm hover:shadow-md transition-shadow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-maritime-gold" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+                            Maximum On
+                        </h3>
+<ul class="grid grid-cols-1 gap-4">
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">PRODUCTIVITY</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">DISCIPLINE</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">BONDING</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">INFRASTRUCTURE</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">MANAGEMENT</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-secondary-container group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">FINANCE</span>
+</li>
+</ul>
+</div>
+<!-- Minimum On -->
+<div class="bg-white p-10 border-t-4 border-signal-red shadow-sm hover:shadow-md transition-shadow">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-signal-red" style="font-variation-settings: 'FILL' 1;">trending_down</span>
+                            Minimum On
+                        </h3>
+<ul class="grid grid-cols-1 gap-4">
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-signal-red group-hover:scale-110 transition-transform">cancel</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">ATTRITION</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-signal-red group-hover:scale-110 transition-transform">cancel</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">ABSENTEEISM</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-signal-red group-hover:scale-110 transition-transform">cancel</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">DAMAGES</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-signal-red group-hover:scale-110 transition-transform">cancel</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">SHRINKAGE</span>
+</li>
+<li class="flex items-center gap-4 py-3 border-b border-surface-variant last:border-0 group">
+<span class="material-symbols-outlined text-signal-red group-hover:scale-110 transition-transform">cancel</span>
+<span class="font-bold text-on-surface font-label-lg tracking-wider">LOSSES</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-primary-container text-surface py-12">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
+<!-- Branding & Contact -->
+<div class="space-y-6">
+<img alt="PACIFIC WORKFORCE Logo" class="h-16 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtXpKtUU5oV0tdN25e-gYuuqCpaXT_Ek3dlz3TacNfYwq5WgChDbSlFKzibcxAqC61yEmNAMx3yuwumLmPONvnUVO8cVDDrtbQ9uY4DDQnFClEhyOIddEGP9VHFD5RGWzHjvEbmpysTx6eTuYiDGH-xwLoM7nyd52TcrS1PAuMCcbY5zYNWujVOXgMu9JGIaiTwxzvKkmS_8M2DJzSwGbmVjEML6RZcQrBDf1ItJ9fAzt0tyremcvdo_A"/>
+<div class="space-y-4 font-body-md text-surface-variant">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-maritime-gold">location_on</span>
+<p class="">Sarita Society, S T Colony Road, Gangapur Road, Nashik, Maharashtra, India, 422005</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-maritime-gold">schedule</span>
+<p class="">Working Hours: 10:00AM To 6:00PM</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-maritime-gold">call</span>
+<p class="">9356698616 / 9834437239</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-maritime-gold">mail</span>
+<p class="">pacificworkforcesocial@gmail.com</p>
+</div>
+</div>
+<div class="pt-4">
+<p class="font-label-lg mb-3">Follow us on</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-deep-navy border border-surface-variant/30 flex items-center justify-center hover:bg-maritime-gold hover:text-deep-navy transition-all duration-300" href="https://www.instagram.com/pacific.workforce?igsh=MWp0Y2ZmN3NhZ2JyYg%3D%3D">
+<span class="material-symbols-outlined" style="font-size: 20px;">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-deep-navy border border-surface-variant/30 flex items-center justify-center hover:bg-maritime-gold hover:text-deep-navy transition-all duration-300" href="https://www.facebook.com/pacific.workforce">
+<span class="material-symbols-outlined" style="font-size: 20px;">qr_code_2</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Services Links -->
+<div class="md:col-span-2"><h4 class="font-headline-md text-maritime-gold mb-8">QUICK LINKS</h4><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><ul class="space-y-3"><li class=""><a class="text-surface-variant opacity-80 hover:text-maritime-gold hover:opacity-100 transition-colors font-body-md" href="{{DATA:SCREEN:SCREEN_5}}">Home</a></li><li class=""><a class="text-surface-variant opacity-80 hover:text-maritime-gold hover:opacity-100 transition-colors font-body-md" href="{{DATA:SCREEN:SCREEN_9}}">About</a></li><li class=""><a class="text-surface-variant opacity-80 hover:text-maritime-gold hover:opacity-100 transition-colors font-body-md" href="{{DATA:SCREEN:SCREEN_6}}">Services</a></li></ul><ul class="space-y-3"><li class=""><a class="text-surface-variant opacity-80 hover:text-maritime-gold hover:opacity-100 transition-colors font-body-md" href="{{DATA:SCREEN:SCREEN_2}}">Blog</a></li><li class=""><a class="text-surface-variant opacity-80 hover:text-maritime-gold hover:opacity-100 transition-colors font-body-md" href="{{DATA:SCREEN:SCREEN_4}}">Contact</a></li></ul></div></div>
+</div>
+<div class="pt-8 border-t border-surface-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-surface-variant opacity-80 text-body-md">Pacific Workforce - 2024. All Rights Reserved.</p>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 bg-green-600 px-4 py-2 rounded-full text-white font-medium hover:bg-green-700 transition-colors" href="https://wa.me/9356698616">
+<span class="material-symbols-outlined">chat</span> WhatsApp
+                    </a>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-[100]" href="https://wa.me/9356698616">
+<svg class="w-10 h-10 fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+<script>
+        // Micro-interactions for operational excellence items
+        document.querySelectorAll('li.group').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const icon = item.querySelector('.material-symbols-outlined');
+                if(icon) {
+                  icon.style.transition = 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                  icon.style.transform = 'scale(1.3) rotate(5deg)';
+                }
+            });
+            item.addEventListener('mouseleave', () => {
+                const icon = item.querySelector('.material-symbols-outlined');
+                if(icon) {
+                  icon.style.transform = 'scale(1) rotate(0deg)';
+                }
+            });
+        });
+    </script>
+</body></html>
